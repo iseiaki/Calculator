@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="images/calculatoricon.png">
+    <link rel="icon" href="images/calculatoricon.png">
+    <!--Css file-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Js-->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="grid">
+        <div class="output">
+            <h1 id="output"></h1>
+        </div>
+        <button class="longbutton clear" value="" onclick="calculate12(this.value)">C</button>
+        <button class="delete" value="delete" onclick="calculate13(this.value)"><img id="del" src="images/DeleteIcon.png" alt="Del"></button>
+        <button class="mul" value="*" onclick="calculate14(this.value)">*</button>
+        <button class="num1" value="1" onclick="calculate1(this.value)">1</button>
+        <button class="num2" value="2" onclick="calculate2(this.value)">2</button>
+        <button class="num3" value="3" onclick="calculate3(this.value)">3</button>
+        <button class="divi" value="/" onclick="calculate15(this.value)">÷</button>
+        <button class="num4" value="4" onclick="calculate4(this.value)">4</button>
+        <button class="num5" value="5" onclick="calculate5(this.value)">5</button>
+        <button class="num6" value="6" onclick="calculate6(this.value)">6</button>
+        <button class="plus" value="+" onclick="calculate16(this.value)">+</button>
+        <button class="num7" value="7" onclick="calculate7(this.value)">7</button>
+        <button class="num8" value="8" onclick="calculate8(this.value)">8</button>
+        <button class="num9" value="9" onclick="calculate9(this.value)">9</button>
+        <button class="minus" value="-" onclick="calculate17(this.value)">-</button>
+        <button class="nump" value="." onclick="calculate10(this.value)">.</button>
+        <button class="num0" value="0" onclick="calculate11(this.value)">0</button>
+        <button class="longbutton equal" value="equal" onclick="calculate18(this.value)">=</button>
+    </div>
+</body>
+</html>

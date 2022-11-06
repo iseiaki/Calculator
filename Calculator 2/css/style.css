@@ -1,0 +1,133 @@
+:root{
+    --linear1: #108dc7;
+    --linear2: #ef8e38;
+    --btnborder: rgb(255, 255, 255);
+    --btnback: #53c2f565;
+    --btnhover: #0084ffb0;
+    --outback: rgba(255, 166, 0, 0.151);
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    font-weight: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto)repeat(5, 100px);
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.grid button{
+    cursor: pointer;
+    background-color: var(--btnback);
+    font-size: 32px;
+    outline: none;
+    border-radius: 44px;
+background: #e0e0e0;
+box-shadow:  23px 23px 27px #b5b5b5,
+             -23px -23px 27px #ffffff;
+    border-radius: 120px;
+    transition: 0.2s;
+}
+
+.grid button:hover{
+    background-color: var(--btnhover);
+    transition: 0.7s;
+}
+
+.grid button:active {
+    background-color: var(--btnhover); }
+
+.longbutton{
+    z-index:30;
+    grid-column: span 2;
+    box-shadow:  1px 3px 4px #b5b5b5,
+             -1px -3px 4px #ffffff !important;
+
+}
+
+.output {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    z-index: 100;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 15px;
+    border-radius: 44px;
+    border-radius: 44px;
+    border: 2px solid black;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  10px 2px 20px #bebebe,
+                 -10px -2px 10px #ffffff;
+  }
+
+#del{
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 400px) {
+    body{
+        background: #108dc7;
+    }
+}
+
+.clear {
+    z-index: 34;
+    background-color: rgb(255, 90, 90)!important;
+}
+
+.equal {
+    background-color: var(--btnhover)!important;
+}
+
+.mul {
+    background-color: var(--linear2)!important;
+    z-index: 32;
+    box-shadow:  1px 3px 4px #b5b5b5,
+             -1px -3px 4px #ffffff !important;
+
+}
+.divi {
+    background-color: rgb(96, 239, 96) !important;
+    z-index:31;
+    box-shadow:  1px 3px 4px #b5b5b5,
+    -1px -3px 4px #ffffff !important;
+
+}
+
+.plus {
+    background-color: rgb(248, 122, 255)!important;
+    z-index:30;
+    box-shadow:  1px 3px 4px #b5b5b5,
+             -1px -3px 4px #ffffff !important;
+}
+
+.minus {
+    background-color: rgb(117, 241, 255)!important;
+    z-index:29;
+    box-shadow:  1px 3px 4px #b5b5b5,
+             -1px -3px 4px #ffffff !important;
+}
+.delete {
+    background-color: rgb(255, 90, 90)!important;
+    z-index: 33;
+    box-shadow:  1px 3px 4px #b5b5b5,
+             -1px -3px 4px #ffffff !important;
+}
